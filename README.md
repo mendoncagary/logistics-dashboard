@@ -1,4 +1,4 @@
-# `numadic task` — Golang, Nodejs, Angular
+# `logistics dashboard` — Golang, Nodejs, Angular
 
 The application contains features like:
 1. Local System Health
@@ -16,7 +16,7 @@ To get you started you can simply download and extract the `numadic` repository 
 
 You must have Node.js and its package manager (npm) installed. You can get them from [here][node].
 
-### Download `numadic`
+### Download `logistics-dashboard`
 
 Extract the `numadic` repository using zip:
 
