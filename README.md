@@ -18,7 +18,7 @@ You must have Node.js and its package manager (npm) installed. You can get them 
 
 ### Download `logistics-dashboard`
 
-Extract the `numadic` repository using zip:
+Extract the `logistics-dashboard` repository using zip:
 
 ### Folder Structure
 
