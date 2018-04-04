@@ -1,0 +1,76 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="header">
+                    <h4 class="title">Device Info</h4>
+                    <p class="category">Status, Speed and Timestamp</p>
+                </div>
+                <div class="content table-responsive table-full-width">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Timestamp</th>
+                                <th>Status</th>
+                                <th>Speed</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let device of type1">
+                                <!-- <td *ngFor="let cell of row">{{cell}}</td> -->
+                                <td>{{device.i_utctime}}</td>
+                                <td>{{device.i_status}}</td>
+                                <td>{{device.i_speed}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="col-lg-12 col-md-12">
+            <div class="card">
+                <div class="header">
+                    <h4 class="title">Get Type 1 Data</h4>
+                </div>
+                <div class="content">
+                    <!-- <form> -->
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="form-group">
+                                    <label>Device Identity</label>
+                                    <input type="text" class="form-control border-input" placeholder="Device Identity" value="Device-001"  [(ngModel)]="deviceIdentity">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>StartTime</label>
+                                    <input  class="form-control border-input" [(ngModel)]="startTime" ngui-datetime-picker date-format="DD-MM-YYYY hh:mm:ss" year="2014" month="12" day="31" hour="23" minute='59' second="30" [close-on-select]="false"/>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">EndTime</label>
+                                    <input  class="form-control border-input" [(ngModel)]="endTime" ngui-datetime-picker date-format="DD-MM-YYYY hh:mm:ss" year="2014" month="12" day="31" hour="23" minute='59' second="30" [close-on-select]="false"/>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="buton" class="btn btn-info btn-fill btn-wd" (click)="type1Data()">Get Type 1 Data</button>
+                        </div>
+                        <div class="clearfix"></div>
+                    <!-- </form> -->
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
