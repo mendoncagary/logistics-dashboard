@@ -10,7 +10,7 @@ The application contains features like:
 
 ## Getting Started
 
-To get you started you can simply download and extract the `numadic` repository and install the dependencies:
+To get you started you can simply download and extract the `logistics-dashboard` repository and install the dependencies:
 
 ### Prerequisites
 
@@ -24,7 +24,7 @@ Extract the `logistics-dashboard` repository using zip:
 
 Once extracted, there will be two folders and a README.md file: 
 1. 'web-app' which is the angular app
-2. 'The numadic' folder contains server side nodejs code
+2. The 'logistics-dashboard' folder contains server side nodejs code
 3. README contains instruction about the setup
 
 
